@@ -1,0 +1,705 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scrollbar properties */
+::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(transparent,#30ff00); */
+  background: linear-gradient(
+    43deg,
+    #000000 0%,
+    #A2C4DF 33%,
+    #A2C4DF 66%,
+    #000000 100%
+  );
+  border-radius: 6px;
+  height: 300px;
+}
+
+/* ***************************************************** */
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main img{
+  height: 160px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  height: 100vh;
+}
+
+.nav-wrapper {
+  height: 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}
+.hero-section {
+  height: 100%;
+}
+.swiper {
+  z-index: 1;
+  width: 70% !important;
+}
+.swiper-wrapper{
+  padding-top: 2rem;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.about-gfg {
+  color: white;
+  background-color: rgba(60, 61, 61, 0.5);
+  /* background-color: rgb(166, 216, 184); */
+}
+.prize-inner {
+  background-color: rgba(60, 61, 61, 0.5);
+  gap: 1rem;
+}
+.footer {
+  color: white;
+  background-color: rgba(29, 28, 28, 0.8);
+}
+.footer-logo {
+  height: 80% !important;
+}
+
+
+
+.gfg-gradient {
+  background-image: linear-gradient(
+    43deg,
+    #ffffff 0%,
+    #012034 33%,
+    #A2C4DF 66%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900 !important;
+  font-size: 60px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 3;
+  box-shadow: 0px 0px 0px rgb(44, 214, 22);
+  -webkit-transition:  box-shadow .2s ease-out;
+     box-shadow: .8px .9px 3px rgb(44, 223, 8);
+}
+.card:hover{ 
+  box-shadow: 0px 0px 40px rgb(24, 211, 21);
+ -webkit-transition:  box-shadow .6s ease-in;
+}
+
+.about-gfg{
+  box-shadow: 0px 0px 0px #A2C4DF;
+  -webkit-transition:  box-shadow .2s ease-out;
+     box-shadow: .8px .9px 3px #A2C4DF;
+}
+.about-gfg:hover{
+  box-shadow: 0px 0px 40px #A2C4DF;
+     -webkit-transition:  box-shadow .6s ease-in;
+}
+
+.prize-inner{
+  box-shadow: 0px 0px 0px #A2C4DF;
+  -webkit-transition:  box-shadow .2s ease-out;
+     box-shadow: .8px .9px 3px #A2C4DF;
+}
+.prize-inner:hover{
+  box-shadow: 0px 0px 40px #A2C4DF;
+  -webkit-transition:  box-shadow .6s ease-in;
+}
+.nav-link{
+  text-decoration: none;
+}
+.nav-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #9AB8D0;
+  text-underline-offset: 10px;
+  transition: .3s ease-in;
+}
+
+
+.section-card {
+  z-index: 3;
+}
+
+.dash {
+  height: 5px;
+  width: 400px;
+  background: rgb(176, 166, 166);
+}
+#side-nav {
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
+  top: 0;
+  height: 100%;
+  background-color: #9AB8D0;
+  position: fixed;
+}
+.about-text {
+  text-align: center;
+  text-justify: inter-word;
+}
+@property --timer {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 1;
+}    
+.register{
+  /* color: #58fb42; */
+        /* text-shadow: 0 0 3vw #F40A35;
+        animation: glow 1.2s ease infinite;
+        -moz-animation: glow 1.2s ease infinite;
+        -webkit-animation: glow 2s ease-in-out infinite; */
+        color: #fff;
+        letter-spacing: 10 px;
+        text-shadow:
+            0 0 7px #d2cece,
+            0 0 10px #5b5858,
+            0 0 21px #A2C4DF,
+            0 0 42px #A2C4DF,
+            0 0 82px #A2C4DF,
+            0 0 92px rgb(0, 0, 0),
+            0 0 102px rgb(26, 26, 26),
+            0 0 151px rgb(0, 0, 0);
+
+}
+/* @keyframes glow {
+  0%{
+    text-shadow: 0 0 1px #57df57, 0 0 1.5vw #57df57, 0 0 2vw #57df57, 0 0 2vw #57df57, 0 0 .2vw #57df57, .5vw .5vw .1vw #57df57;
+    color: #57df57;
+  }
+  50% {
+    text-shadow: 0 0 1px #b1b1b1, 0 0 1.5vw #b1b1b1, 0 0 5vw #b1b1b1,
+      0 0 5vw #b1b1b1, 0 0 0.2vw #b1b1b1, 0.5vw 0.5vw 0.1vw #38ac24;
+    color: #b1b1b1;
+  }
+  100% {
+    text-shadow: 0 0 1px #3cf716, 0 0 3vw #178406, 0 0 10vw #108818,
+      0 0 10vw #1aff00, 0 0 0.4vw #30f644, 0.5vw 0.5vw 0.1vw #1fcf1f;
+    color: #b1b1b1;
+  }
+  
+} */
+
+.MuiTimeline-root {
+  margin-bottom: 3rem;
+}
+
+/* **********************Background*************** */
+:root {
+  background-color: rgb(0, 0, 0);
+  font-family: poppins;
+}
+
+/* *********************************************** */
+
+.App {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+#canvas {
+  /* position: fixed;
+   */
+  position: absolute;
+  width: 50% !important;
+  height: 60% !important;
+}
+
+#Matrix{
+  position: fixed;
+}
+
+.prize-logo img{
+  max-width: 90%;
+}
+
+.copyright {
+  background-color: rgba(29, 28, 28, 0.8);
+}
+
+.note-body{
+  font-size: 30px;
+  color: #9AB8D0;
+}
+.note-title{
+  font-size: 20px;
+}
+
+/* FIRE WORKS */
+
+#fire-works {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* FOR BACKGROUND  */
+.circle {
+  position: fixed;
+  bottom: 0;
+  width: 20px;
+  z-index: -2;
+  aspect-ratio: 1/1;
+  background: rgb(252, 252, 252);
+  box-shadow: 0 0 10px rgb(252, 252, 252), 0 0 20px rgb(252, 252, 252), 0 0 30px rgb(252, 252, 252), 0 0 50px rgb(252, 252, 252);
+  border-radius: 50%;
+  animation: animate 5s linear forwards;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-70vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  /* width: 50%; */
+  height: 100vh;
+  opacity: 0.5s;
+  background: linear-gradient(#0f0, transparent);
+}
+
+/* footer */
+.footer-link:hover{
+  color: #F1C93B;
+}
+
+.footer-insta:hover{
+  color: #d62ba8;
+}
+.footer-linkedin:hover{
+  color: #396bd0;
+}
+
+/* counter */
+
+.expired-notice {
+  text-align: center;
+  padding: 2rem;
+  /* border: 1px solid #ebebeb; */
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  /* border: 1px solid #ebebeb; */
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 0 0.75rem 0 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+  color: #ff0000;
+}
+
+.show-counter .countdown > p {
+  margin: 0;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 1rem;
+
+}
+
+
+
+/* for responsiveness */
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1450px) {
+  .sponsor-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sponsor-main-title {
+    font-size: 40px;
+  }
+  .dash {
+    width: 300px;
+  }
+  .about-text {
+    font-size: 22px;
+  }
+  .nav-link {
+    margin: 0 2rem;
+  }
+  .section-card {
+    width: 75%;
+  }
+  /* .prize-logo{
+    width: 500px;
+    margin-bottom: 4rem; 
+  } */
+  
+}
+@media only screen and (max-width: 1200px) {
+  .nav-link {
+    margin: 0 1.5rem;
+  }
+  .prize-main{
+    height: 50%;
+  }
+  #canvas{
+    height: 50% !important;
+  }
+  /* .prize-logo{
+    width: 60%;
+    margin-bottom: 4rem; 
+  } */
+}
+@media only screen and (max-width: 992px) {
+  .hero-image-container {
+    height: 45%;
+  }
+  .about-text {
+    font-size: 20px !important;
+  }
+  .about-title {
+    font-size: 40px;
+  }
+  .sponsor-main-title {
+    font-size: 35px;
+  }
+  .footer-inner {
+    height: 200px;
+  }
+  .footer-title {
+    font-size: 25px;
+  }
+  .section-card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .swiper {
+    width: 70%;
+  }
+  .dash {
+    width: 220px;
+  }
+  .hero-image-container {
+    height: 39%;
+  }
+  .section-card {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .sponsor-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 2rem 0;
+  }
+  .footer-item {
+    font-size: 15px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .section-card {
+    width: 75%;
+  }
+  .prize-main{
+    height: 43%;
+  }
+  #canvas{
+    height: 43% !important;
+    width: 70% !important;
+  }
+  /* .prize-logo{
+    max-width: 100%;
+    
+  } */
+}
+@media only screen and (max-width: 800px) {
+  .dash {
+    display: none;
+  }
+  .sponsor-type {
+    margin: 1rem 0;
+  }
+  .section-card {
+    width: 75%;
+  }
+  .sponsor-main-title {
+    font-size: 30px;
+  }
+  .prize-inner{
+    width: 70%;
+  }
+  #canvas{
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .nav-link {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .nav-wrapper {
+    justify-content: end;
+    padding-right: 40px;
+    font-size: 25px;
+  }
+  .sidebar-nav-link {
+    margin: 2rem 0;
+    font-size: 20px;
+  }
+  .about-title {
+    font-size: 30px;
+  }
+  .sponsor-main-title {
+    font-size: 28px;
+  }
+  .section-card {
+    width: 75%;
+  }
+  /* .prize-logo{
+    max-width: 90%;
+    
+  } */
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-image-container {
+    height: 30%;
+  }
+  .section-card {
+    width: 75%;
+  }
+  .prize-inner{
+    width: 70%;
+  }
+  .prize-main{
+    height: 40%;
+  }
+  #canvas{
+    height: 40% !important;
+    width: 70% !important;
+  }
+  .note-body{
+    font-size: 20px;
+  }
+  .note-title{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .App {
+    font-size: 25px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer-item {
+    font-size: 12px;
+  }
+  .footer-social-icons {
+    font-size: 35px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .sponsor-main-title {
+    font-size: 25px;
+  }
+  .section-card {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsor-main-title {
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+  }
+  .section-card {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .prize-Title{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-image-container {
+    height: 35%;
+  }
+  .footer {
+    height: 50%;
+  }
+  .footer-title {
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .footer-item {
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer-inner {
+    flex-direction: column;
+    height: 90%;
+  }
+  .footer-block {
+    align-items: center;
+  }
+  .section-card {
+    width: 85%;
+  }
+
+  .register {
+    font-size: 40px !important;
+  }
+  .about-text {
+    padding: 13px 13px;
+    font-size: 16px !important;
+  }
+  .nav-logo {
+    width: 80px;
+  }
+  .card{
+    width: 280px;
+    height: 160px;
+  }
+  .note-body{
+    font-size: 20px;
+  }
+  .note-title{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .prize-inner{
+    width: 75%;
+  }
+
+  .dollar{
+    font-size: 40px;
+  }
+  .footer-title {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .note-body{
+    font-size: 15px;
+  }
+  .note-title{
+    font-size: 15px;
+  }
+  
+}
+@media only screen and (max-width: 380px){
+  .prize-Title{
+    font-size: 22px;
+  }
+  .note-body{
+    font-size: 15px;
+  }
+  .note-title{
+    font-size: 15px;
+  }
+}
