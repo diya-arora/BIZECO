@@ -43,9 +43,9 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
-              Registrations Open
+              Investor's Pitch
             </Typography>
-            <Typography>23rd of October&apos;23</Typography>
+            <Typography>Round 1&2 : 26th July, Round 3 : 27th July </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -65,9 +65,9 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
-              Registration Closes
+              Estate Battle
             </Typography>
-            <Typography>4th of November &apos;23</Typography>
+            <Typography>27 July</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -80,9 +80,9 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
-              Choose Domains
+              Maquire
             </Typography>
-            <Typography> 4th November &apos;23</Typography>
+            <Typography> Round 1&2 : 26th July, Round 3 : 27th July </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -95,9 +95,9 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
-              Implementation Phase
+              BIZECO Stock Exchange (BSE)
             </Typography>
-            <Typography>5th to 18th November &apos;23</Typography>
+            <Typography>26 July</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -118,9 +118,9 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
-              Round 1 Submissions
+              Crypteco
             </Typography>
-            <Typography>19th November &apos;23</Typography>
+            <Typography>Round 1&2 : 26th July, Round 3 : 27th July </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -133,9 +133,9 @@ const TimeLine = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
-              Final Round of GeekVishwa
+              AD - Stratify
             </Typography>
-            <Typography>23rd of November&apos;23</Typography>
+            <Typography>26 July</Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

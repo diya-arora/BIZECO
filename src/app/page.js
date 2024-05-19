@@ -18,12 +18,12 @@ import Notice from '@/component/Notice'
 export default function Home() {
 
   const gfghead="About us"
-  const gfgdesc= "GeeksforGeeks Student Chapters are university-based community chapters creating a coding culture for students interested in Computer Science and other core technical competencies. By joining the GeeksforGeeks student Chapters, students will have the opportunity to:Get an internship at GeeksforGeeks. Grow their knowledge in a peer-to-peer learning environment.Learn to build effective and optimized solutions for local businesses and their community as per the latest technology trends.Great learning and networking experience."
+  const gfgdesc= "Delhi Public School Rohini invites you to the annual Business and Economics competition ‘BIZECO 2024’ to be held on 26th and 27th July 2024. This competition encompasses six engaging and challenging events, each focusing on different aspects of commerce and economics, that provide a platform to students to showcase and upskill their business knowledge and acumen."
 
-  const gwhead=" What is GeekVishwa"
-  const p1 = "GeekVishwa Hackathon, organized by GeeksForGeeks Student Chapter VIIT in Pune, is a significant hybrid event."
-  const p2 = "It gathers top talents from engineering colleges, promoting creativity, collaboration, and innovation."
-  const p3 = "Participants form teams to develop practical solutions for real-world problems, with opportunities for recognition and prizes, creating a competitive and rewarding atmosphere."
+  const gwhead=" Events entailing BIZECO"
+  const p1 = "Investor’s Pitch, Bizeco Stock Exchange (BSE), Macquire, Crypteco, Estate Battle, Ad-Stratify"
+  const p2 = ""
+  const p3 = ""
   const p4 = ""
 
   // const gwgdesc= "GeekVishwa Hackathon is planned to be one of the largest hybrid (Offline-Online) hackathons in Pune, Organized by GeeksForGeeks Student Chapter VIIT.It is event of unprecedented scale, opportunity, and rewards, where we intent to attract and showcase the brightest talents across the plethora of engineering colleges in Pune.This event is designed to foster creativity, collaboration, and innovation among participants. It offers an excellent opportunity for participants to showcase their skills, network with peers, and potentially win prizes and recognition for their work.During the event, participants will work in teams to develop innovative ideas that can solve real-world problems. They will be encouraged to use their creativity, technical skills, and critical thinking abilities to develop solutions that are both practical and effective."
